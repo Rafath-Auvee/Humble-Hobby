@@ -4,7 +4,7 @@ export interface ProductFeature {
   };
 }
 
-export interface ProductVariant {
+interface ProductVariant {
   productId: string;
   id: string;
   size: string;

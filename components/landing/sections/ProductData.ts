@@ -34,7 +34,23 @@ export const productsData: Product[] = [
     warrantyType: "Frozen Goods",
     countryOfOrigin: "USA",
     categories: ["Pizza", "Frozen Foods"],
-    variants: [{ size: "Medium" }, { size: "Large" }],
+    variants: [
+      {
+        size: "Medium",
+        id: "v1",
+        productId: "p2",
+        colors: ["Red"],
+        inventory: 10,
+      },
+      {
+        size: "Large",
+        id: "v2",
+        productId: "p2",
+        colors: ["Red"],
+        inventory: 5,
+      },
+    ],
+
     // featuredTags: [{ feature: { name: "Best Seller" } }],
   },
   {
@@ -52,7 +68,15 @@ export const productsData: Product[] = [
     warrantyType: "Frozen Goods",
     countryOfOrigin: "USA",
     categories: ["Pizza", "Dinner", "Frozen"],
-    variants: [{ size: "Regular" }],
+    variants: [
+      {
+        size: "Regular",
+        id: "v3",
+        productId: "p3",
+        colors: ["Yellow"],
+        inventory: 8,
+      },
+    ],
     featuredTags: [{ feature: { name: "Thin Crust" } }],
   },
   {
@@ -142,7 +166,15 @@ export const productsData: Product[] = [
     warrantyType: "Dry Goods",
     countryOfOrigin: "Colombia",
     categories: ["Coffee", "Pantry", "Beverages"],
-    variants: [{ size: "250g" }],
+    variants: [
+      {
+        size: "250g",
+        id: "v3",
+        productId: "p3",
+        colors: ["Green"],
+        inventory: 8,
+      },
+    ],
     featuredTags: [{ feature: { name: "Arabica" } }],
   },
 ];

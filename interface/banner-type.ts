@@ -21,14 +21,14 @@ export interface BannerButton {
 export interface BannerProps {
   title: string;
   subtitle: string;
-  gradient?: string;
-  backgroundImage?: string;
-  icon?: ReactNode;
   mrp: string;
   price: string;
+  gradient?: string;
+  backgroundImage?: string;
+  icon?: ReactNode; // ✅ optional
+  badge?: string;
   titleColor?: string;
   subtitleColor?: string;
   priceColor?: string;
-  badge?: string;
   buttons?: BannerButton[];
 }

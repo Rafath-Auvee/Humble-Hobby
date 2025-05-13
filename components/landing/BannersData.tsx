@@ -1,12 +1,8 @@
 // components/banners/BannersData.ts
 
 import {
-  Flower2,
-  Gift,
-  Laptop,
   Sparkles,
   Sun,
-  GiftIcon,
   ShoppingBag,
   Trophy,
   Zap,

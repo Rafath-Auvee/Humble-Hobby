@@ -28,7 +28,6 @@ const HeroSection = ({
 }: HeroSectionProps) => {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
-  const [isLoaded, setIsLoaded] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -56,7 +55,6 @@ const HeroSection = ({
     if (!api) return;
 
     setCurrent(api.selectedScrollSnap());
-    setIsLoaded(true);
     api.on("select", handleSelect);
 
     startAutoplay();

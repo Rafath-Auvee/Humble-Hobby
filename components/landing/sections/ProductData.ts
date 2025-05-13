@@ -1,5 +1,5 @@
+/* eslint-disable */
 import { Product } from "@/interface/product";
-
 export const productsData: Product[] = [
   {
     id: "1",

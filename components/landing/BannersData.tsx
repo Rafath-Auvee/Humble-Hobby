@@ -1,5 +1,6 @@
 // components/banners/BannersData.ts
 
+import { BannerProps } from "@/interface/banner-type";
 import {
   Sparkles,
   Sun,
@@ -9,7 +10,9 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-export const BannersData = [
+
+
+export const BannersData: BannerProps[] = [
   {
     title: "Shopping with us for better quality and the best price",
     subtitle: "We have prepared special discounts for you on grocery products. Don't miss these opportunities...",
@@ -31,7 +34,7 @@ export const BannersData = [
     buttons: [
       {
         text: "Shop Now",
-        // variant: "secondary",
+        variant: "secondary",
         url: "/summer-sale",
         buttonColor: "bg-[#634C9F]",
         icon: <ArrowRight className="w-5 h-5 ml-2" />,
@@ -59,6 +62,7 @@ export const BannersData = [
       {
         text: "Shop Now",
         url: "/audio-deals",
+        variant: "secondary",
         buttonColor: "bg-yellow-400 text-black",
         icon: <ArrowRight className="w-5 h-5 ml-2" />,
       },
@@ -81,6 +85,7 @@ export const BannersData = [
         text: "Grab One",
         url: "/lemon-drink",
         buttonColor: "bg-green-500 text-white",
+        variant: "secondary",
         icon: <ArrowRight className="w-5 h-5 ml-2" />,
       },
     ],
@@ -101,6 +106,7 @@ export const BannersData = [
       {
         text: "Explore Looks",
         url: "/mens-fashion",
+        variant: "secondary",
         buttonColor: "bg-white text-black",
         icon: <ArrowRight className="w-5 h-5 ml-2" />,
       },
@@ -122,6 +128,7 @@ export const BannersData = [
       {
         text: "Shop Now",
         url: "/furniture-deals",
+        variant: "secondary",
         buttonColor: "bg-[#634C9F]",
         icon: <ArrowRight className="w-5 h-5 ml-2" />,
       },

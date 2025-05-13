@@ -121,7 +121,7 @@ const HeroSection = ({
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     className="w-full"
                   >
-                    <Banner {...props} />
+                    <Banner {...props as any} />
                   </motion.div>
                 )}
               </AnimatePresence>
